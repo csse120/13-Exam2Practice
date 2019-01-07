@@ -92,7 +92,7 @@ def run_test_practice_problem2b():
     """ Tests the   practice_problem2b  function. """
     print()
     print('--------------------------------------------------')
-    print('Testing the   problem2b  function:')
+    print('Testing the   practice_problem2b  function:')
     print('--------------------------------------------------')
 
     format_string = '    practice_problem2b( {} )'
