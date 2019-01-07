@@ -25,7 +25,8 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #    on it, in class or via Piazza.
 ########################################################################
 
-import simple_testing as st
+import testing_helper
+import time
 
 
 def main():
@@ -44,8 +45,9 @@ def run_test_practice_problem2a():
     # ------------------------------------------------------------------
     # TODO: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
-    #   Include at least **   4 reasonable   ** tests.
-    #
+    #   Include at least **   4    ** tests that, taken together,
+    #   would form a    ** REASONABLY GOOD test set **
+    #   for testing the   practice_problem2a   function defined below.
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
@@ -77,7 +79,7 @@ def practice_problem2a(sequence, delta):
     """
     ####################################################################
     # TODO: 3. Implement and test this function.
-    #     The testing code is already written for you (above).
+    #     WRITE THE TESTS FIRST (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
@@ -87,67 +89,81 @@ def practice_problem2a(sequence, delta):
 
 def run_test_practice_problem2b():
     """ Tests the   practice_problem2b  function. """
-    # ------------------------------------------------------------------
-    # 4 tests, plus a 5th after these.
-    # They use the imported   simple_testing (st)   module.
-    # Each test is a SimpleTestCase with 3 arguments:
-    #   -- the function to test,
-    #   -- a list containing the argument(s) to send to the function,
-    #   -- the correct returned value.
-    # For example, the first test below will call
-    #   practice_problem2b(('hello', 'Bye', 'ok joe'))
-    # and compare the returned value against 'hBo' (the correct answer).
-    # ------------------------------------------------------------------
-    tests = [st.SimpleTestCase(practice_problem2b,
-                               [('hello', 'Bye', 'ok joe')],
-                               'hBo'),
-             st.SimpleTestCase(practice_problem2b,
-                               [('Alice', 'Bob', 'Carson', 'Devi')],
-                               'ABCD'),
-             st.SimpleTestCase(practice_problem2b,
-                               [('', 'tricky', '', 'one, no?', '!')],
-                               'to!'),
-             st.SimpleTestCase(practice_problem2b,
-                               [('my very long string', 'ok', 'mmmm')],
-                               'mom'),
-             ]
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   problem2b  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem2b( {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    # Test 1:
+    expected = 'hBo'
+    print_expected_result_of_test([('hello', 'Bye', 'ok joe')], expected,
+                                  test_results, format_string)
+    actual = practice_problem2b(('hello', 'Bye', 'ok joe'))
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 2:
+    expected = 'ABCD'
+    print_expected_result_of_test([('Alice', 'Bob', 'Carson', 'Devi')],
+                                  expected, test_results, format_string)
+    actual = practice_problem2b(('Alice', 'Bob', 'Carson', 'Devi'))
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 3:
+    expected = 'to!'
+    print_expected_result_of_test([('', 'tricky', '', 'one, no?', '!')],
+                                  expected, test_results, format_string)
+    actual = practice_problem2b(('', 'tricky', '', 'one, no?', '!'))
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 4:
+    expected = 'mom'
+    print_expected_result_of_test([('my very long string', 'ok', 'mmmm')],
+                                  expected,
+                                  test_results, format_string)
+    actual = practice_problem2b(('my very long string', 'ok', 'mmmm'))
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 5:
     jokes = """
-    Q: What is it called when a cat wins a dog show?
-    A: A CAT-HAS-TROPHY!
+        Q: What is it called when a cat wins a dog show?
+        A: A CAT-HAS-TROPHY!
 
-    Q: What do you call a pile of kittens?
-    A: a meowntain
+        Q: What do you call a pile of kittens?
+        A: a meowntain
 
-    Q: Why don't cats like online shopping?
-    A: They prefer a cat-alogue.
+        Q: Why don't cats like online shopping?
+        A: They prefer a cat-alogue.
 
-    Q: What did the cat say when he lost all his money?
-    A: I'm paw!
+        Q: What did the cat say when he lost all his money?
+        A: I'm paw!
 
-    Q: Did you hear about the cat who swallowed a ball of yarn?
-    A: She had a litter of mittens.
+        Q: Did you hear about the cat who swallowed a ball of yarn?
+        A: She had a litter of mittens.
 
-    Q: What do you call a lion who has eaten your mother's sister?
-    A: An aunt-eater!
+        Q: What do you call a lion who has eaten your mother's sister?
+        A: An aunt-eater!
 
-    Q. How do you know when your cat's done cleaning herself?
-    A. She's smoking a cigarette.
+        Q. How do you know when your cat's done cleaning herself?
+        A. She's smoking a cigarette.
 
-    source: http://www.jokes4us.com/animaljokes/catjokes.html
-    """
+        source: http://www.jokes4us.com/animaljokes/catjokes.html
+        """
     # 5th test: Split  jokes  at spaces to get a list of strings.
     sequence = jokes.split()
-    answer = ('QWiicwacwadsAACQWdycapokAamQWdclosAT' +
-              'pacQWdtcswhlahmAIpQDyhatcwsaboyAShalom' +
-              'QWdycalwheymsAAaQHdykwycdchASsacsh')
-    tests.append(st.SimpleTestCase(practice_problem2b,
-                                   [sequence],
-                                   answer))
+    expected = ('QWiicwacwadsAACQWdycapokAamQWdclosAT' +
+                'pacQWdtcswhlahmAIpQDyhatcwsaboyAShalom' +
+                'QWdycalwheymsAAaQHdykwycdchASsacsh')
 
-    # ------------------------------------------------------------------
-    # Run the 5 tests in the   tests   list constructed above.
-    # ------------------------------------------------------------------
-    st.SimpleTestCase.run_tests('practice_problem2b', tests)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem2b(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
 
 
 def practice_problem2b(sequence):
@@ -167,7 +183,7 @@ def practice_problem2b(sequence):
        Given [] returns ''
        Given ('my very long string', 'ok', 'mmmm') returns 'mom'
     Type hints:
-      :type sequence [str]
+      :type sequence: [str]
     """
     ####################################################################
     # TODO: 4. Implement and test this function.
@@ -179,7 +195,49 @@ def practice_problem2b(sequence):
     ####################################################################
 
 
-# ----------------------------------------------------------------------
+###############################################################################
+# Our tests use the following to print error messages in red.
+# Do NOT change it.  You do NOT have to do anything with it.
+###############################################################################
+
+def print_expected_result_of_test(arguments, expected,
+                                  test_results, format_string, suffix=''):
+    testing_helper.print_expected_result_of_test(arguments, expected,
+                                                 test_results, format_string,
+                                                 suffix)
+
+
+def print_actual_result_of_test(expected, actual, test_results,
+                                precision=None):
+    testing_helper.print_actual_result_of_test(expected, actual,
+                                               test_results, precision)
+
+
+def print_summary_of_test_results(test_results):
+    testing_helper.print_summary_of_test_results(test_results)
+
+
+# To allow color-coding the output to the console:
+USE_COLORING = True  # Change to False to revert to OLD style coloring
+
+testing_helper.USE_COLORING = USE_COLORING
+if USE_COLORING:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_colored
+else:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_uncolored
+
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
-main()
+# The   try .. except   prevents error messages on the console from being
+# intermingled with ordinary output to the console.
+# -----------------------------------------------------------------------------
+try:
+    main()
+except Exception:
+    print('ERROR - While running this test,', color='red')
+    print('your code raised the following exception:', color='red')
+    print()
+    time.sleep(1)
+    raise
