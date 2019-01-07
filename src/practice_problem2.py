@@ -36,10 +36,10 @@ def main():
     run_test_practice_problem2b()
 
 
-# -----------------------------------------------------------------------------
+###############################################################################
 # Students: Some of the testing code below uses a simple testing framework.
 # Ask for help if the tests that we supply are not clear to you.
-# -----------------------------------------------------------------------------
+###############################################################################
 
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """

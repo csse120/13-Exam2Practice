@@ -64,24 +64,23 @@ def is_prime(n):
             return False
 
     return True
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Students:
     #   Do NOT touch the above  is_prime  function - it has no TODO.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
-# ----------------------------------------------------------------------
+###############################################################################
 # Students: Some of the testing code below uses a simple testing framework.
 # Ask for help if the tests that we supply are not clear to you.
-# ----------------------------------------------------------------------
-
+###############################################################################
 
 def run_test_practice_problem3a():
     """ Tests the    practice_problem3a    function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # 6 tests.
     # They use the imported   simple_testing (st)   module.
     # Each test is a SimpleTestCase with 3 arguments:
@@ -95,7 +94,7 @@ def run_test_practice_problem3a():
     #                       rg.Circle(rg.Point(10, 40), 20),
     #                       rg.Circle(rg.Point(2, 50), 10)))
     # and compare the returned value against 1400 (the correct answer).
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     tests = [st.SimpleTestCase(practice_problem3a,
                                [(rg.Circle(rg.Point(5, 10), 20),
                                  rg.Circle(rg.Point(2, 20), 20),
@@ -131,9 +130,9 @@ def run_test_practice_problem3a():
                                    [circles],
                                    answer))
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Run the 6 tests in the   tests   list constructed above.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     st.SimpleTestCase.run_tests('practice_problem3a', tests)
 
 
@@ -156,19 +155,19 @@ def practice_problem3a(circles):
     Type hints:
       :type sequence: [rg.Circle]
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 2. Implement and test this function.
     #     The testing code is already written for you (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 def run_test_practice_problem3b():
     """ Tests the    practice_problem3b    function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # 13 tests.  They use the imported   simple_testing (st)   module.
     # Each test is a SimpleTestCase with 3 arguments:
     #   -- the function to test,
@@ -177,7 +176,7 @@ def run_test_practice_problem3b():
     # For example, the first test below will call
     #   practice_problem3b([12, 33, 18, 'hello', 9, 13, 3, 9])
     # and compare the returned value against True (the correct answer).
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     tests = [st.SimpleTestCase(practice_problem3b,
                                [[12, 33, 18, 'hello', 9, 13, 3, 9]],
                                True),
@@ -266,7 +265,7 @@ def practice_problem3b(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     #
@@ -274,16 +273,16 @@ def practice_problem3b(sequence):
     #    'count' or 'index' methods for sequences in this problem
     #    (because here we want you to demonstrate your ability
     #    to use explicit looping).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 def run_test_practice_problem3c():
     """ Tests the    practice_problem3c    function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # 4 tests.  They use the imported   simple_testing (st)   module.
     # Each test is a SimpleTestCase with 3 arguments:
     #   -- the function to test,
@@ -293,7 +292,7 @@ def run_test_practice_problem3c():
     #   practice_problem3c((9, 0, 8, 0, 0, 4, 4, 0))
     # and compare the returned value against [1, 3, 4, 7]
     # (the correct answer).
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     tests = [st.SimpleTestCase(practice_problem3c,
                                [(9, 0, 8, 0, 0, 4, 4, 0)],
                                [1, 3, 4, 7]),
@@ -354,19 +353,19 @@ def practice_problem3c(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 4. Implement and test this function.
     #     The testing code is already written for you (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 def run_test_practice_problem3d():
     """ Tests the    practice_problem3d    function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # 4 tests.  They use the imported   simple_testing (st)   module.
     # Each test is a SimpleTestCase with 3 arguments:
     #   -- the function to test,
@@ -375,7 +374,7 @@ def run_test_practice_problem3d():
     # For example, the first test below will call
     #   practice_problem3d((9, 0, 8, 0, 0, 4, 4, 0))
     # and compare the returned value against 1 (the correct answer).
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     tests = [st.SimpleTestCase(practice_problem3d,
                                [(9, 0, 8, 0, 0, 4, 4, 0)],
                                1),
@@ -436,17 +435,16 @@ def practice_problem3d(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 5. Implement and test this function.
     #     The testing code is already written for you (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes for each part of this problem.
-    ####################################################################
+    ###########################################################################
 
-
-    ####################################################################
+    ###########################################################################
     # TODO: 6. Just ABOVE this TODO, you should have implemented
     #     a solution for the   practice_problem3d   function.
     #     Here, put ANOTHER solution, as follows:
@@ -460,12 +458,12 @@ def practice_problem3d(sequence):
     #              practice_problem3c.
     #
     #          This solution should *** HAVE NO LOOP (no FOR). ***
-    ####################################################################
+    ###########################################################################
 
 
 def run_test_practice_problem3e():
     """ Tests the    practice_problem3e    function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # 5 tests.  They use the imported   simple_testing (st)   module.
     # Each test is a SimpleTestCase with 3 arguments:
     #   -- the function to test,
@@ -474,7 +472,7 @@ def run_test_practice_problem3e():
     # For example, the first test below will call
     #   practice_problem3e((12, 33, 18, 9, 13, 3, 9, 20, 19, 20))
     # and compare the returned value against 161 (the correct answer).
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     tests = [st.SimpleTestCase(practice_problem3e,
                                [(12, 33, 18, 9, 13, 3, 99, 20, 19, 20)], 161),
              st.SimpleTestCase(practice_problem3e,
@@ -484,7 +482,8 @@ def run_test_practice_problem3e():
              st.SimpleTestCase(practice_problem3e,
                                [(8888888888, -9999999999)], 8888888888),
              st.SimpleTestCase(practice_problem3e,
-                               [(-77, 20000, -33, 40000, -55, 60000, -11)], -176),
+                               [(-77, 20000, -33, 40000, -55, 60000, -11)],
+                               -176),
              st.SimpleTestCase(practice_problem3e,
                                [()], 0),
              st.SimpleTestCase(practice_problem3e,
@@ -501,9 +500,9 @@ def run_test_practice_problem3e():
                                [(-77, 8, 78, 100)], 1),
              ]
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Run the 5 tests in the   tests   list constructed above.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     st.SimpleTestCase.run_tests('practice_problem3e', tests)
 
 
@@ -522,14 +521,14 @@ def practice_problem3e(sequence):
     Type hints:
       :type sequence: list(float)    or tuple(float)
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #     The testing code is already written for you (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 ###############################################################################
