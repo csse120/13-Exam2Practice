@@ -9,7 +9,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-########################################################################
+###############################################################################
 # Students:
 #
 # These problems have DIFFICULTY and TIME ratings:
@@ -27,7 +27,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #    if you reach the time estimate and are NOT close to a solution,
 #    STOP working on that problem and ASK YOUR INSTRUCTOR FOR HELP
 #    on it, in class or via Piazza.
-########################################################################
+###############################################################################
 
 import time
 import sys
@@ -36,9 +36,10 @@ import sys
 def main():
     """ Calls the   TEST   functions in this module. """
 
-    ####################################################################
+    ###########################################################################
     # UN-comment tests as you work the problems.
-    ####################################################################
+    ###########################################################################
+
 
 #     run_test_init()
 #     run_test_append_string()
@@ -51,9 +52,9 @@ def main():
 #     run_test_combined_box()
 
 
-########################################################################
+###############################################################################
 # The   Box   class (and its methods) begins here.
-########################################################################
+###############################################################################
 
 class Box(object):
     """
@@ -94,15 +95,15 @@ class Box(object):
           :type contents: str
           :type volume: int
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 2. Implement and test this function.
         #     See the testing code (below) for more examples.
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      3
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def append_string(self, additional_contents):
         """
@@ -135,11 +136,11 @@ class Box(object):
         Type hints:
           :type additional_contents: str
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 3. Implement and test this function.
         #     See the testing code (below) for more examples.
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      10
         #    TIME ESTIMATE:   20 - 30 minutes.
@@ -156,7 +157,7 @@ class Box(object):
         #    minutes, then read the file
         #       Read_this_ONLY_when_asked_Part_2.txt
         #    and continue working on the problem.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def double(self):
         """
@@ -191,19 +192,19 @@ class Box(object):
           #   s is 'Robot Fun'   [this is the part of the doubled
           #                       contents that did NOT fit]
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 4. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      5
         #    TIME ESTIMATE:   3 minutes.
-        # --------------------------------------------------------------
-        ################################################################
+        # ---------------------------------------------------------------------
+        #######################################################################
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
-        ################################################################
+        #######################################################################
 
     def shrink(self, new_volume):
         """
@@ -240,18 +241,18 @@ class Box(object):
         Type hints:
           :type new_volume: int
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 5. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      8
         #    TIME ESTIMATE:   12 minutes.
         #
         # IMPORTANT: Write a solution to this problem in pseudo-code,
         # and THEN translate the pseudo-code to a solution.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def double_then_shrink(self, new_volume):
         """
@@ -263,7 +264,7 @@ class Box(object):
           Returns the number of characters that were discarded (see examples)
         Side effects:
           -- Calls this Box's   double   method, then
-          -- Calls this Box's   shrink   method, sending it the given new_volume.
+          -- Calls this Box's   shrink   method, sending the given new_volume.
         Examples:
           b1 = Box('Goodbye', 20)
           n = b1.double_then_shrink(17)
@@ -296,15 +297,15 @@ class Box(object):
         Type hints:
           :type new_volume: int
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 6. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      5
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def reset(self):
         """
@@ -315,15 +316,15 @@ class Box(object):
           Changes this Box's contents and volume to whatever they were
           when this Box was constructed.
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 7. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      4
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def steal(self, other_box):
         """
@@ -343,19 +344,19 @@ class Box(object):
         Type hints:
           :type other_box: Box
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 8. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      7
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
-        ################################################################
+        # ---------------------------------------------------------------------
+        #######################################################################
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
-        ################################################################
+        #######################################################################
 
     def get_history(self):
         """
@@ -374,7 +375,7 @@ class Box(object):
           h = b.get_history()
           #   h is still []
 
-          b.reset()  # So now b.contents is 'Good' again and its volume is 20 again
+          b.reset()  # So now (again) b.contents is 'Good' and its volume is 20
           h = b.get_history()
           #   h is now ['GoodGo']
 
@@ -386,15 +387,15 @@ class Box(object):
           h = b.get_history()
           #   h is now ['GoodGo', 'GoodBye']
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 9. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      6
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
     def combined_box(self, other_box):
         """
@@ -404,28 +405,29 @@ class Box(object):
         What goes out:
           Returns a new Box whose:
             -- Contents is the contents of this Box plus (i.e., followed by)
-               the contents of the given other_box
-            -- Volume is the sum of the volumes of this Box and the given other_box
+                 the contents of the given other_box.
+            -- Volume is the sum of the volumes of this Box
+                 and the given other_box.
         Side effects: None.
         Examples:
           See the TEST cases for examples.
         Type hints:
           :type other_box: Box
         """
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # TODO: 10. Implement and test this function.
         #     The testing code is already written for you (above).
-        # --------------------------------------------------------------
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
+        # ---------------------------------------------------------------------
         # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      4
         #    TIME ESTIMATE:   5 minutes.
-        # --------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
 
-########################################################################
+###############################################################################
 # The TEST functions for the  Box  class begin here.
-########################################################################
+###############################################################################
 def run_test_init():
     """ Tests the   __init__   method of the Box class. """
     print()
@@ -1004,7 +1006,8 @@ def print_failure_message(message='  *** FAILED the above test. ***',
           file=sys.stderr, flush=True)
     time.sleep(flush_time)
 
-# ----------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()
