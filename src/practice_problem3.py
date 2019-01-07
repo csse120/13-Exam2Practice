@@ -289,7 +289,7 @@ def run_test_practice_problem3b():
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 13:
-    expected = True
+    expected = False
     sequence = [(8,), '8', [4 + 4, 4 + 4], [8, 8], 7, (8, 8)]
     print_expected_result_of_test([sequence], expected, test_results,
                                   format_string)
