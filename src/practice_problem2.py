@@ -6,16 +6,16 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-########################################################################
+###############################################################################
 # Students:
 #
 # These problems have DIFFICULTY and TIME ratings:
 #  DIFFICULTY rating:  1 to 10, where:
 #     1 is very easy
-#     3 is an "easy" Test 2 question.
-#     5 is a "typical" Test 2 question.
-#     7 is a "hard" Test 2 question.
-#    10 is an EXTREMELY hard problem (too hard for a Test 2 question)
+#     3 is an "easy" Exam 2 question.
+#     5 is a "typical" Exam 2 question.
+#     7 is a "hard" Exam 2 question.
+#    10 is an EXTREMELY hard problem (too hard for a Exam 2 question)
 #
 #  TIME ratings: A ROUGH estimate of the number of minutes that we
 #     would expect a well-prepared student to take on the problem.
@@ -24,7 +24,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #    if you reach the time estimate and are NOT close to a solution,
 #    STOP working on that problem and ASK YOUR INSTRUCTOR FOR HELP
 #    on it, in class or via Piazza.
-########################################################################
+###############################################################################
 
 import testing_helper
 import time
@@ -36,24 +36,24 @@ def main():
     run_test_practice_problem2b()
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Students: Some of the testing code below uses a simple testing framework.
 # Ask for help if the tests that we supply are not clear to you.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
     #   for testing the   practice_problem2a   function defined below.
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
     #    TIME ESTIMATE:   5 minutes.
-    ####################################################################
+    ###########################################################################
     print()
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
@@ -78,14 +78,14 @@ def practice_problem2a(sequence, delta):
       :type sequence: [int]
       :type delta:    int
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 3. Implement and test this function.
     #     WRITE THE TESTS FIRST (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   5 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 def run_test_practice_problem2b():
@@ -186,14 +186,14 @@ def practice_problem2b(sequence):
     Type hints:
       :type sequence: [str]
     """
-    ####################################################################
+    ###########################################################################
     # TODO: 4. Implement and test this function.
     #     The testing code is already written for you (above).
-    ####################################################################
+    ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
-    ####################################################################
+    ###########################################################################
 
 
 ###############################################################################
