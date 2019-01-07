@@ -1,8 +1,9 @@
 """
-PRACTICE Test 2, practice_problem 2.
+PRACTICE Exam 2, practice_problem 2.
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
@@ -36,8 +37,8 @@ def main():
 
 
 # ----------------------------------------------------------------------
-# Students: Some of the testing code below uses SimpleTestCase objects,
-#           from the imported   simple_testing (st)   module.
+# Students: Some of the testing code below uses a simple testing framework.
+# Ask for help if the tests that we supply are not clear to you.
 # ----------------------------------------------------------------------
 
 def run_test_practice_problem2a():

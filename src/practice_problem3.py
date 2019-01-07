@@ -1,8 +1,9 @@
 """
-PRACTICE Test 2, practice_problem 3.
+PRACTICE Exam 2, practice_problem 3.
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
@@ -25,7 +26,8 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #    on it, in class or via Piazza.
 ########################################################################
 
-import simple_testing as st
+import testing_helper
+import time
 import math
 import rosegraphics as rg
 
@@ -72,9 +74,8 @@ def is_prime(n):
 
 
 # ----------------------------------------------------------------------
-# Students: Some of the testing code below uses SimpleTestCase objects,
-#           from the imported   simple_testing (st)   module.
-#           See details in the  test  code below.
+# Students: Some of the testing code below uses a simple testing framework.
+# Ask for help if the tests that we supply are not clear to you.
 # ----------------------------------------------------------------------
 
 
@@ -531,7 +532,49 @@ def practice_problem3e(sequence):
     ####################################################################
 
 
-# ----------------------------------------------------------------------
+###############################################################################
+# Our tests use the following to print error messages in red.
+# Do NOT change it.  You do NOT have to do anything with it.
+###############################################################################
+
+def print_expected_result_of_test(arguments, expected,
+                                  test_results, format_string, suffix=''):
+    testing_helper.print_expected_result_of_test(arguments, expected,
+                                                 test_results, format_string,
+                                                 suffix)
+
+
+def print_actual_result_of_test(expected, actual, test_results,
+                                precision=None):
+    testing_helper.print_actual_result_of_test(expected, actual,
+                                               test_results, precision)
+
+
+def print_summary_of_test_results(test_results):
+    testing_helper.print_summary_of_test_results(test_results)
+
+
+# To allow color-coding the output to the console:
+USE_COLORING = True  # Change to False to revert to OLD style coloring
+
+testing_helper.USE_COLORING = USE_COLORING
+if USE_COLORING:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_colored
+else:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_uncolored
+
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
-main()
+# The   try .. except   prevents error messages on the console from being
+# intermingled with ordinary output to the console.
+# -----------------------------------------------------------------------------
+try:
+    main()
+except Exception:
+    print('ERROR - While running this test,', color='red')
+    print('your code raised the following exception:', color='red')
+    print()
+    time.sleep(1)
+    raise

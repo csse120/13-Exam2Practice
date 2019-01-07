@@ -1,11 +1,12 @@
 """
-PRACTICE Test 2, practice_problem 1.
+PRACTICE Exam 2, practice_problem 1.
 
 This problem provides practice at:
   ***  IMPLEMENTING CLASSES.  ***
 
-Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
