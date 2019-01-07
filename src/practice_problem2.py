@@ -15,7 +15,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #     3 is an "easy" Exam 2 question.
 #     5 is a "typical" Exam 2 question.
 #     7 is a "hard" Exam 2 question.
-#    10 is an EXTREMELY hard problem (too hard for a Exam 2 question)
+#    10 is an EXTREMELY hard problem (too hard for an Exam 2 question)
 #
 #  TIME ratings: A ROUGH estimate of the number of minutes that we
 #     would expect a well-prepared student to take on the problem.

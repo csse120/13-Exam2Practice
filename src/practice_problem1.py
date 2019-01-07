@@ -15,10 +15,10 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 # These problems have DIFFICULTY and TIME ratings:
 #  DIFFICULTY rating:  1 to 10, where:
 #     1 is very easy
-#     3 is an "easy" Test 2 question.
-#     5 is a "typical" Test 2 question.
-#     7 is a "hard" Test 2 question.
-#    10 is an EXTREMELY hard problem (too hard for a Test 2 question)
+#     3 is an "easy" Exam 2 question.
+#     5 is a "typical" Exam 2 question.
+#     7 is a "hard" Exam 2 question.
+#    10 is an EXTREMELY hard problem (too hard for an Exam 2 question)
 #
 #  TIME ratings: A ROUGH estimate of the number of minutes that we
 #     would expect a well-prepared student to take on the problem.
@@ -150,13 +150,14 @@ class Box(object):
         #    and THEN translate the pseudo-code to a solution.
         #
         # 2. If you do not have a correct solution after 10-15 minutes,
-        #    read the file   Read_this_ONLY_when_asked_Part_1.txt
+        #    then read the file
+        #       Read_this_ONLY_when_asked_Part_1.txt
         #    and continue working on the problem.
         #
-        # 3. If you still do not have a solution after another 5-10
-        #    minutes, then read the file
+        # 3. If you still do not have a solution after another 5-10 minutes,
+        #    then read the file
         #       Read_this_ONLY_when_asked_Part_2.txt
-        #    and continue working on the problem.
+        #    and complete your work on the problem.
         # ---------------------------------------------------------------------
 
     def double(self):
