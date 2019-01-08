@@ -599,7 +599,7 @@ def run_test_double():
         print_failure_message()
     print()
 
-    # Test 5: mutiple doubles
+    # Test 5: multiple doubles
     initial_contents = 'Good morning'
     expected_contents = initial_contents * 4
     expected_volume = 100
@@ -608,6 +608,7 @@ def run_test_double():
     box.double()
     print("Expected:", expected_contents, expected_volume)
     print("Actual:  ", box.contents, box.volume)
+    print("  (Ignoring the returned values for this test that doubles twice.)")
     if (expected_contents == box.contents) and (expected_volume == box.volume):
         print("Test passed SUCCESSFULLY!")
     else:
