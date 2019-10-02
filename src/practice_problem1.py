@@ -5,7 +5,7 @@ This problem provides practice at:
   ***  IMPLEMENTING CLASSES.  ***
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         Mark Hays, Amanda Stouder, Derek Whitley, their colleagues,
          and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -97,9 +97,8 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 2. Implement and test this function.
         #     See the testing code (below) for more examples.
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      3
         #    TIME ESTIMATE:   5 minutes.
         # ---------------------------------------------------------------------
@@ -138,25 +137,24 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 3. Implement and test this function.
         #     See the testing code (below) for more examples.
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      10
         #    TIME ESTIMATE:   20 - 30 minutes.
-        #
+        #  ___
         #   **** IMPORTANT: ****
-        # 1. Write a solution to this problem in pseudo-code,
-        #    and THEN translate the pseudo-code to a solution.
-        #
-        # 2. If you do not have a correct solution after 10-15 minutes,
-        #    then read the file
-        #       Read_this_ONLY_when_asked_Part_1.txt
-        #    and continue working on the problem.
-        #
-        # 3. If you still do not have a solution after another 5-10 minutes,
-        #    then read the file
-        #       Read_this_ONLY_when_asked_Part_2.txt
-        #    and complete your work on the problem.
+        #  1. Write a solution to this problem in pseudo-code,
+        #     and THEN translate the pseudo-code to a solution.
+        #  ___
+        #  2. If you do not have a correct solution after 10-15 minutes,
+        #     then read the file
+        #        PART_1_Read_this_ONLY_when_asked.txt
+        #     and continue working on the problem.
+        #  ___
+        #  3. If you still do not have a solution after another 5-10 minutes,
+        #     then read the file
+        #        PART_2_Read_this_ONLY_when_asked.txt
+        #     and complete your work on the problem.
         # ---------------------------------------------------------------------
 
     def double(self):
@@ -195,16 +193,16 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 4. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      5
         #    TIME ESTIMATE:   3 minutes.
+        #  --------------------------------------------------------------------
+        #  ####################################################################
+        #  FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
+        #     ** TWO **   LINES OF CODE.
+        #  ####################################################################
         # ---------------------------------------------------------------------
-        #######################################################################
-        # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
-        #    ** TWO **   LINES OF CODE.
-        #######################################################################
 
     def shrink(self, new_volume):
         """
@@ -244,14 +242,13 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 5. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      8
         #    TIME ESTIMATE:   12 minutes.
-        #
-        # IMPORTANT: Write a solution to this problem in pseudo-code,
-        # and THEN translate the pseudo-code to a solution.
+        #  ___
+        #  IMPORTANT: Write a solution to this problem in pseudo-code,
+        #  and THEN translate the pseudo-code to a solution.
         # ---------------------------------------------------------------------
 
     def double_then_shrink(self, new_volume):
@@ -300,9 +297,8 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 6. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      5
         #    TIME ESTIMATE:   5 minutes.
         # ---------------------------------------------------------------------
@@ -319,9 +315,8 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 7. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      4
         #    TIME ESTIMATE:   5 minutes.
         # ---------------------------------------------------------------------
@@ -347,16 +342,15 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 8. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      7
         #    TIME ESTIMATE:   5 minutes.
-        # ---------------------------------------------------------------------
-        #######################################################################
-        # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
+        #  ####################################################################
+        #  FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
-        #######################################################################
+        #  ####################################################################
+        # ---------------------------------------------------------------------
 
     def get_history(self):
         """
@@ -390,9 +384,8 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 9. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      6
         #    TIME ESTIMATE:   5 minutes.
         # ---------------------------------------------------------------------
@@ -417,9 +410,8 @@ class Box(object):
         # ---------------------------------------------------------------------
         # TODO: 10. Implement and test this function.
         #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+        #  --------------------------------------------------------------------
+        #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
         #    DIFFICULTY:      4
         #    TIME ESTIMATE:   5 minutes.
         # ---------------------------------------------------------------------

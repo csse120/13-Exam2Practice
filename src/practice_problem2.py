@@ -2,7 +2,7 @@
 PRACTICE Exam 2, practice_problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         Mark Hays, Amanda Stouder, Derek Whitley, their colleagues,
          and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -49,11 +49,11 @@ def run_test_practice_problem2a():
     #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
     #   for testing the   practice_problem2a   function defined below.
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
     #    TIME ESTIMATE:   5 minutes.
-    ###########################################################################
+    #  ------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
@@ -78,45 +78,45 @@ def practice_problem2a(sequence, delta):
       :type sequence: [int]
       :type delta:    int
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #     WRITE THE TESTS FIRST (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   5 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem2b():
-    """ Tests the   practice_problem2b  function. """
+    """ Tests the   practice_problem2c  function. """
     print()
     print('--------------------------------------------------')
-    print('Testing the   practice_problem2b  function:')
+    print('Testing the   practice_problem2c  function:')
     print('--------------------------------------------------')
 
-    format_string = '    practice_problem2b( {} )'
+    format_string = '    practice_problem2c( {} )'
     test_results = [0, 0]  # Number of tests passed, failed.
 
     # Test 1:
     expected = 'hBo'
     print_expected_result_of_test([('hello', 'Bye', 'ok joe')], expected,
                                   test_results, format_string)
-    actual = practice_problem2b(('hello', 'Bye', 'ok joe'))
+    actual = practice_problem2c(('hello', 'Bye', 'ok joe'))
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 2:
     expected = 'ABCD'
     print_expected_result_of_test([('Alice', 'Bob', 'Carson', 'Devi')],
                                   expected, test_results, format_string)
-    actual = practice_problem2b(('Alice', 'Bob', 'Carson', 'Devi'))
+    actual = practice_problem2c(('Alice', 'Bob', 'Carson', 'Devi'))
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 3:
     expected = 'to!'
     print_expected_result_of_test([('', 'tricky', '', 'one, no?', '!')],
                                   expected, test_results, format_string)
-    actual = practice_problem2b(('', 'tricky', '', 'one, no?', '!'))
+    actual = practice_problem2c(('', 'tricky', '', 'one, no?', '!'))
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 4:
@@ -124,7 +124,7 @@ def run_test_practice_problem2b():
     print_expected_result_of_test([('my very long string', 'ok', 'mmmm')],
                                   expected,
                                   test_results, format_string)
-    actual = practice_problem2b(('my very long string', 'ok', 'mmmm'))
+    actual = practice_problem2c(('my very long string', 'ok', 'mmmm'))
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 5:
@@ -160,14 +160,14 @@ def run_test_practice_problem2b():
 
     print_expected_result_of_test([sequence], expected, test_results,
                                   format_string)
-    actual = practice_problem2b(sequence)
+    actual = practice_problem2c(sequence)
     print_actual_result_of_test(expected, actual, test_results)
 
     # SUMMARY of test results:
     print_summary_of_test_results(test_results)
 
 
-def practice_problem2b(sequence):
+def practice_problem2c(sequence):
     """
     What comes in:
       -- A sequence of strings, e.g. ('hello', 'Bye', 'ok joe')
@@ -186,14 +186,14 @@ def practice_problem2b(sequence):
     Type hints:
       :type sequence: [str]
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #     The testing code is already written for you (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 ###############################################################################

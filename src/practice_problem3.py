@@ -2,7 +2,7 @@
 PRACTICE Exam 2, practice_problem 3.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         Mark Hays, Amanda Stouder, Derek Whitley, their colleagues,
          and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -172,14 +172,14 @@ def practice_problem3a(circles):
     Type hints:
       :type sequence: [rg.Circle]
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #     The testing code is already written for you (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem3b():
@@ -341,19 +341,19 @@ def practice_problem3b(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #     The testing code is already written for you (above).
-    #
-    # IMPLEMENTATION REQUIREMENT:  You are NOT allowed to use the
+    #  ___
+    #  IMPLEMENTATION REQUIREMENT:  You are NOT allowed to use the
     #    'count' or 'index' methods for sequences in this problem
     #    (because here we want you to demonstrate your ability
     #    to use explicit looping).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem3c():
@@ -469,14 +469,14 @@ def practice_problem3c(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #     The testing code is already written for you (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem3d():
@@ -592,28 +592,27 @@ def practice_problem3d(sequence):
     Type hints:
       :type: sequence: list    or tuple or string
     """
-    ###########################################################################
+    # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #     The testing code is already written for you (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes for each part of this problem.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
     ###########################################################################
     # TODO: 6. Just ABOVE this _TODO_, you should have implemented
     #     a solution for the   practice_problem3d   function.
     #     Here, put ANOTHER solution, as follows:
-    #
+    #  ___
     #       -- Your FIRST solution (ABOVE this _TODO_)
     #            should be a solution that IGNORES
     #              practice_problem3c (the previous problem).
-    #
+    #  ___
     #       -- Your SECOND solution (BELOW this _TODO_)
     #            should be a solution that USES (calls)
     #              practice_problem3c.
-    #
     #          This solution should *** HAVE NO LOOP (no FOR). ***
     ###########################################################################
 
@@ -746,11 +745,11 @@ def practice_problem3e(sequence):
     # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #     The testing code is already written for you (above).
-    ###########################################################################
-    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
-    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 ###############################################################################
