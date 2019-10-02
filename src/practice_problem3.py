@@ -39,6 +39,9 @@ def main():
     run_test_practice_problem3c()
     run_test_practice_problem3d()
     run_test_practice_problem3e()
+    run_test_practice_problem3f()
+    run_test_practice_problem3g()
+    run_test_practice_problem3h()
 
 
 def is_prime(n):
@@ -749,6 +752,338 @@ def practice_problem3e(sequence):
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes.
+    # -------------------------------------------------------------------------
+
+
+def run_test_practice_problem3f():
+    """ Tests the    practice_problem3f    function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem3f  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem3f( {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    # Test 1:
+    expected = [2, 5]
+    sequence = (9, 33, 8, 8, 0, 4, 4, 8)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3f(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 2:
+    expected = [0, 1, 2, 5, 6]
+    sequence = (9, 9, 9, 9, 0, 9, 9, 9)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3f(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 3:
+    expected = []
+    sequence = (4, 5, 4, 5, 4, 5, 4)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3f(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 4:
+    expected = [1, 4, 5]
+    sequence = 'abbabbb'
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3f(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 5:
+    expected = []
+    sequence = [509]
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3f(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
+
+
+def practice_problem3f(sequence):
+    """
+    What comes in: A non-empty sequence.
+    What goes out: Returns a list of integers,
+      where the integers are the places (indices)
+      where an item in the given sequence appears twice in a row.
+    Side effects: None.
+    Examples:
+      Given sequence (9, 33, 8, 8, 0, 4, 4, 8)
+         -- this function returns [2, 5]
+              since 8 appears twice in a row starting at index 2
+              and 4 appears twice in a row starting at index 5
+
+      Given sequence (9, 9, 9, 9, 0, 9, 9, 9)
+         -- this function returns [0, 1, 2, 5, 6]
+
+      Given sequence (4, 5, 4, 5, 4, 5, 4)
+         -- this function returns []
+
+      Given sequence 'abbabbb'
+         -- this function returns [1, 4, 5]
+
+    Type hints:
+      :type sequence: list | tuple | string
+    """
+    # -------------------------------------------------------------------------
+    # TODO: 8. Implement and test this function.
+    #     The testing code is already written for you (above).
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      7
+    #    TIME ESTIMATE:   15 minutes.
+    # -------------------------------------------------------------------------
+
+
+def run_test_practice_problem3g():
+    """ Tests the    practice_problem3g    function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem3g  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem3g( {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    # Test 1:
+    expected = 99
+    sequence = (12, 133, 18, 9, 13, 3, 99, 20, 19, 200)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 2:
+    expected = 125
+    sequence = (125, 133, 18, 9, 13, 3, 99, 20, 19, 200, 124, 124, 124)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 3:
+    expected = 25
+    sequence = (25, 100)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 4:
+    expected = 10
+    sequence = (3, 12, 10, 8, 8, 9, 8, 11)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 5:
+    expected = -9999999999
+    sequence = (-9999999999, 8888888888)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 6:
+    expected = 8888888888
+    sequence = (8888888888, -9999999999)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 7:
+    expected = -11
+    sequence = (-77, 20000, -33, 40000, -55, 60000, -11)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 8:
+    expected = -99999999999999
+    sequence = (-99999999999999)
+    print_expected_result_of_test([sequence], expected, test_results,
+                                  format_string)
+    actual = practice_problem3g(sequence)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
+
+
+def practice_problem3g(sequence):
+    """
+    What comes in:
+      A sequence of numbers, where the length of the sequence >= 1.
+    What goes out:
+      Returns the largest of the numbers at EVEN INDICES of the sequence.
+    Side effects: None.
+    Examples:
+      If the sequence is:
+          (12, 133, 18, 9, 13, 3, 99, 20, 19, 200)
+      then the largest of the numbers at EVEN indices is the largest of
+           12      18     13     99      19        which is 99.
+      So the function returns 99 in this example.
+
+    Type hints:
+      :type sequence: (list | tuple) of (float | int)
+    """
+    # -------------------------------------------------------------------------
+    # TODO: 9. Implement and test this function.
+    #     The testing code is already written for you (above).
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      5
+    #    TIME ESTIMATE:   10 minutes.
+    # -------------------------------------------------------------------------
+
+
+def run_test_practice_problem3h():
+    """ Tests the    practice_problem3h    function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem3h  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem3h( {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    # Test 1:
+    c = rg.Circle(rg.Point(7, 30), 10)
+    expected = rg.Circle(rg.Point(7, 30), 10)
+    circles = (rg.Circle(rg.Point(5, 10), 20),
+               rg.Circle(rg.Point(2, 20), 20),
+               c,
+               rg.Circle(rg.Point(10, 40), 20),
+               rg.Circle(rg.Point(2, 50), 10))
+    print_expected_result_of_test([circles], expected, test_results,
+                                  format_string)
+    actual = practice_problem3h(circles)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    if actual == c and actual is not c:
+        message = ("Technically, *** FAILED the above test. ***\n"
+                   + "because you appear to have returned a CLONE\n"
+                   + "of the correct rg.Circle instead of\n"
+                   + "the rg.Circle itself.")
+        testing_helper.print_colored(message, color='red')
+
+    # Test 2:
+    c = rg.Circle(rg.Point(58, 10), 20)
+    expected = rg.Circle(rg.Point(58, 10), 20)
+    circles = (c,)
+    print_expected_result_of_test([circles], expected, test_results,
+                                  format_string)
+    actual = practice_problem3h(circles)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    if actual == c and actual is not c:
+        message = ("Technically, *** FAILED the above test. ***\n"
+                   + "because you appear to have returned a CLONE\n"
+                   + "of the correct rg.Circle instead of\n"
+                   + "the rg.Circle itself.")
+        testing_helper.print_colored(message, color='red')
+
+    # Test 3:
+    c = rg.Circle(rg.Point(10005, 300), 100)
+    expected = rg.Circle(rg.Point(10005, 300), 100)
+    circles = (rg.Circle(rg.Point(84, 100), 300),
+               rg.Circle(rg.Point(28, 200), 200),
+               c)
+    print_expected_result_of_test([circles], expected, test_results,
+                                  format_string)
+    actual = practice_problem3h(circles)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    if actual == c and actual is not c:
+        message = ("Technically, *** FAILED the above test. ***\n"
+                   + "because you appear to have returned a CLONE\n"
+                   + "of the correct rg.Circle instead of\n"
+                   + "the rg.Circle itself.")
+        testing_helper.print_colored(message, color='red')
+
+    # Test 4:
+    c = rg.Circle(rg.Point(5, 10), 13)
+    expected = rg.Circle(rg.Point(5, 10), 13)
+    circles = (c,
+               rg.Circle(rg.Point(0, 20), 20),
+               rg.Circle(rg.Point(7, 30), 19),
+               rg.Circle(rg.Point(10, 40), 14),
+               rg.Circle(rg.Point(2, 50), 14))
+
+    print_expected_result_of_test([circles], expected, test_results,
+                                  format_string)
+    actual = practice_problem3h(circles)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    if actual == c and actual is not c:
+        message = ("Technically, *** FAILED the above test. ***\n"
+                   + "because you appear to have returned a CLONE\n"
+                   + "of the correct rg.Circle instead of\n"
+                   + "the rg.Circle itself.")
+        testing_helper.print_colored(message, color='red')
+
+    # Test 5:  Perhaps not a valid test since it assumes an rg.Circle
+    #          can have a NEGATIVE radius, but it will catch some dubious code.
+    small = -9999999999999999999999999999
+    c = rg.Circle(rg.Point(7, 30), small)
+    expected = rg.Circle(rg.Point(7, 30), small)
+    circles = (rg.Circle(rg.Point(0, 20), small + 0.0000001),
+               c,
+               rg.Circle(rg.Point(10, 40), small),
+               rg.Circle(rg.Point(2, 50), small + 1))
+
+    print_expected_result_of_test([circles], expected, test_results,
+                                  format_string)
+    actual = practice_problem3h(circles)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    if actual == c and actual is not c:
+        message = ("Technically, *** FAILED the above test. ***\n"
+                   + "because you appear to have returned a CLONE\n"
+                   + "of the correct rg.Circle instead of\n"
+                   + "the rg.Circle itself.")
+        testing_helper.print_colored(message, color='red')
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
+
+
+def practice_problem3h(circles):
+    """
+    What comes in:  A non-empty sequence of rg.Circles.
+    What goes out:  Returns the rg.Circle in the list whose radius is smallest.
+      Breaks ties in favor of the leftmost (smallest index) of those tied.
+    Side effects: None.
+    Examples:
+      If the sequence is a list containing these 5 rg.Circles:
+        rg.Circle(rg.Point(5, 10), 20)
+        rg.Circle(rg.Point(2, 20), 10)
+        rg.Circle(rg.Point(7, 30), 30)
+        rg.Circle(rg.Point(10, 40), 20)
+        rg.Circle(rg.Point(2, 50), 10)
+      then this function returns the rg.Circle at index 1 of the sequence.
+    Type hints:
+      :type circles: [rg.Circle]
+    """
+    # -------------------------------------------------------------------------
+    # TODO: 10. Implement and test this function.
+    #     The testing code is already written for you (above).
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      7
+    #    TIME ESTIMATE:   10 minutes.
     # -------------------------------------------------------------------------
 
 
