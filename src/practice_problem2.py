@@ -147,8 +147,8 @@ def run_test_practice_problem2b():
         Q: What do you call a lion who has eaten your mother's sister?
         A: An aunt-eater!
 
-        Q. How do you know when your cat's done cleaning herself?
-        A. She's smoking a cigarette.
+        Q: What is it called when a cat wins a dog show?
+        A: A CAT-HAS-TROPHY!
 
         source: http://www.jokes4us.com/animaljokes/catjokes.html
         """
@@ -156,7 +156,7 @@ def run_test_practice_problem2b():
     sequence = jokes.split()
     expected = ('QWiicwacwadsAACQWdycapokAamQWdclosAT' +
                 'pacQWdtcswhlahmAIpQDyhatcwsaboyAShalom' +
-                'QWdycalwheymsAAaQHdykwycdchASsacsh')
+                'QWdycalwheymsAAaQWiicwacwadsAACsh')
 
     print_expected_result_of_test([sequence], expected, test_results,
                                   format_string)
