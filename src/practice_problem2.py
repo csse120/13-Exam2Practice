@@ -35,6 +35,7 @@ def main():
     run_test_practice_problem2a()
     run_test_practice_problem2b()
     run_test_practice_problem2c()
+    run_test_practice_problem2d()
 
 
 ###############################################################################
@@ -128,7 +129,7 @@ def run_test_practice_problem2b():
     #   (We supplied 3 tests, so you need supply only one more.)
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-    #    DIFFICULTY:      3
+    #    DIFFICULTY:      4
     #    TIME ESTIMATE:   10 minutes.
     #  --------------------------------------------------------------------
     """ Tests the   practice_problem2b  function. """
@@ -265,7 +266,7 @@ def practice_problem2b(sequence, delta):
     #     WRITE THE TESTS FIRST (above).
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-    #    DIFFICULTY:      5
+    #    DIFFICULTY:      3
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
 
@@ -375,6 +376,194 @@ def practice_problem2c(sequence):
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
+    # -------------------------------------------------------------------------
+
+
+def run_test_practice_problem2d():
+    """ Tests the   practice_problem2d  function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem2d  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem2d( {}, {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem2d   function:')
+    print('--------------------------------------------------')
+
+    # Test 1:
+    arg1 =  [10, -3, 20, 4]
+    correct_arg1_after = [20, -6, 40, 8]
+    arg2 = [5, 0, 8]
+    correct_arg2_after = [5, 0, 8]
+    expected = [10, 0, 16]
+
+    testing_helper.print_function_call_of_test([arg1, arg2], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2d(arg1, arg2)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (arg2 == correct_arg2_after)\
+                and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # Test 2:
+    arg1 =  []
+    correct_arg1_after = []
+    arg2 = []
+    correct_arg2_after = []
+    expected = []
+
+    testing_helper.print_function_call_of_test([arg1, arg2], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2d(arg1, arg2)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (arg2 == correct_arg2_after)\
+                and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # Test 3:
+    arg1 =  [1, 2, 3, 0, 1, 2, 3]
+    correct_arg1_after = [2, 4, 6, 0, 2, 4, 6]
+    arg2 = [0]
+    correct_arg2_after = [0]
+    expected = [0]
+
+    testing_helper.print_function_call_of_test([arg1, arg2], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2d(arg1, arg2)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (arg2 == correct_arg2_after)\
+                and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # Test 4:
+    arg1 = [0]
+    correct_arg1_after = [0]
+    arg2 = [1, 2, 3, 0, 1, 2, 3]
+    correct_arg2_after = [1, 2, 3, 0, 1, 2, 3]
+    expected = [2, 4, 6, 0, 2, 4, 6]
+
+    testing_helper.print_function_call_of_test([arg1, arg2], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2d(arg1, arg2)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (arg2 == correct_arg2_after)\
+                and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
+
+
+def practice_problem2d(list1, list2):
+    """
+    What comes in:
+      -- Two lists of integers.
+    What goes out:
+       -- RETURNs a new list that is the same as list2 but with each
+          number in the list doubled.
+    Side effects:
+      -- MUTATEs the first list by doubling each number in the list
+    Examples:
+      If the two arguments are:
+         [10, -3, 20, 4]  and  [5, 0, 8]
+      then this method MUTATEs the first argument to [20, -6, 40, 8]
+      and RETURNs the list [10, 0, 16]
+
+    Preconditions:
+        :type list1: [int]]
+        :type list2: [int]]
+    """
+    # -------------------------------------------------------------------------
+    # TODO: 5. Implement and test this function.
+    #     The testing code is already written for you (above).
+    #  -------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      5
+    #    TIME ESTIMATE:   8 minutes.
     # -------------------------------------------------------------------------
 
 
