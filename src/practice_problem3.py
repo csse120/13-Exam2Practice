@@ -598,7 +598,7 @@ def practice_problem3d(sequence):
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
-    #    TIME ESTIMATE:   8 minutes for each part of this problem.
+    #    TIME ESTIMATE:   10 minutes for both parts of this problem combined.
     # -------------------------------------------------------------------------
 
     ###########################################################################
@@ -613,7 +613,7 @@ def practice_problem3d(sequence):
     #       -- Your SECOND solution (BELOW this _TODO_)
     #            should be a solution that USES (calls)
     #              practice_problem3c.
-    #          This solution should *** HAVE NO LOOP (no FOR). ***
+    #          This second solution should *** HAVE NO LOOP (no FOR). ***
     ###########################################################################
 
 
