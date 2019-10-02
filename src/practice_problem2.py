@@ -34,6 +34,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     run_test_practice_problem2a()
     run_test_practice_problem2b()
+    run_test_practice_problem2c()
 
 
 ###############################################################################
@@ -43,21 +44,43 @@ def main():
 
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
-    # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
-    #   It TESTS the  practice_problem2a  function defined below.
-    #   Include at least **   4    ** tests that, taken together,
-    #   would form a    ** REASONABLY GOOD test set **
-    #   for testing the   practice_problem2a   function defined below.
-    #  ------------------------------------------------------------------------
-    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-    #    DIFFICULTY:      3
-    #    TIME ESTIMATE:   5 minutes.
-    #  ------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
+
+    format_string = '    problem1a( {}, {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    # Test 1:
+    expected = [8, 16, 11, -14, 14]
+    print_expected_result_of_test([[2, 10, 5, -20, 8], 6], expected,
+                                  test_results, format_string)
+    actual = practice_problem2a([2, 10, 5, -20, 8], 6)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 2:
+    expected = [800]
+    print_expected_result_of_test([[795], 5], expected, test_results,
+                                  format_string)
+    actual = practice_problem2a([795], 5)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 3:
+    expected = []
+    print_expected_result_of_test([[], 50], expected, test_results,
+                                  format_string)
+    actual = practice_problem2a([], 50)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    # Test 4:
+    expected = [1, 1, 2, 3, 10, -11, 12, 0, 0, 1]
+    print_expected_result_of_test([[1, 1, 2, 3, 10, -11, 12, 0, 0, 1], 0],
+                                  expected, test_results, format_string)
+    actual = practice_problem2a([1, 1, 2, 3, 10, -11, 12, 0, 0, 1], 0)
+    print_actual_result_of_test(expected, actual, test_results)
+
+    print_summary_of_test_results(test_results)
 
 
 def practice_problem2a(sequence, delta):
@@ -83,12 +106,135 @@ def practice_problem2a(sequence, delta):
     #     WRITE THE TESTS FIRST (above).
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-    #    DIFFICULTY:      5
+    #    DIFFICULTY:      4
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem2b():
+    # -------------------------------------------------------------------------
+    # TODO: 2. Implement this TEST function.
+    #   It TESTS the  practice_problem2b  function defined below.
+    #   Include at least **   3    ** tests that, taken together,
+    #   would form a    ** REASONABLY GOOD test set **
+    #   for testing the   practice_problem2b   function defined below.
+    #   (We supplied 2 tests, so you need supply only one more.)
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      3
+    #    TIME ESTIMATE:   5 minutes.
+    #  --------------------------------------------------------------------
+    """ Tests the   practice_problem2b  function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem2b  function:')
+    print('--------------------------------------------------')
+
+    format_string = '    practice_problem2b( {}, {} )'
+    test_results = [0, 0]  # Number of tests passed, failed.
+
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   practice_problem2b   function:')
+    print('--------------------------------------------------')
+
+    # Test 1:
+    arg1 =  [2, 10, 5, -20, 8]
+    correct_arg1_after = [8, 16, 11, -14, 14]
+    expected = None
+
+    testing_helper.print_function_call_of_test([arg1, 6], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2b(arg1, 6)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # Test 2:
+    arg1 = [1, 1, 2, 3, 10, -11, 12, 0, 0, 1]
+    correct_arg1_after = [1, 1, 2, 3, 10, -11, 12, 0, 0, 1]
+    expected = None
+
+    testing_helper.print_function_call_of_test([arg1, 0], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2b(arg1, 0)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # -------------------------------------------------------------------------
+    # TODO: 2 (continued): Add your ADDITIONAL test(s) below here.
+    #   You do NOT have to use the "fancy" parts of the above example tests,
+    #   but you MUST test BOTH the returned value AND the mutated list.
+    # -------------------------------------------------------------------------
+
+    # SUMMARY of test results:
+    print_summary_of_test_results(test_results)
+
+
+def practice_problem2b(sequence, delta):
+    """
+    What comes in:
+      -- A sequence of integers, e.g. ([2, 10, 5, -20, 8])
+      -- A number  delta
+    What goes out: Nothing (i.e., None).
+    Side effects:
+           MUTATES the given list so that each number in the list has the given
+             delta
+           added to it (see example below).
+    Example:
+       Given the list  [2, 10, 5, -20, 8]  and the number  6,
+       after the call to this function the value of that given list should be:
+         [8, 16, 11, -14, 14]
+    Type hints:
+      :type sequence: [int]
+      :type delta:    int
+    """
+    # -------------------------------------------------------------------------
+    # TODO: 3. Implement and test this function.
+    #     WRITE THE TESTS FIRST (above).
+    #  ------------------------------------------------------------------------
+    #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      5
+    #    TIME ESTIMATE:   5 minutes.
+    # -------------------------------------------------------------------------
+
+
+def run_test_practice_problem2c():
     """ Tests the   practice_problem2c  function. """
     print()
     print('--------------------------------------------------')

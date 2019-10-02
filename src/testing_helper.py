@@ -35,14 +35,18 @@ COLOR_CODES = {'black': 20,
                }
 
 
-def print_expected_result_of_test(arguments, expected, test_results,
-                                  format_string, suffix=''):
+def print_function_call_of_test(arguments, test_results, format_string):
     test_number = test_results[0] + test_results[1] + 1
     print()
     print('Test {}:'.format(test_number))
 
     print('  This test case calls:')
     print(format_string.format(*arguments))
+
+
+def print_expected_result_of_test(arguments, expected, test_results,
+                                  format_string, suffix=''):
+    print_function_call_of_test(arguments, test_results, format_string)
     print("  Expected:", expected, suffix)
 
 
