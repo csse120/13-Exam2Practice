@@ -80,6 +80,13 @@ def run_test_practice_problem2a():
     actual = practice_problem2a([1, 1, 2, 3, 10, -11, 12, 0, 0, 1], 0)
     print_actual_result_of_test(expected, actual, test_results)
 
+    # Test 5:
+    expected = [-99, -99, -110, -100, -100, 0]
+    print_expected_result_of_test([[1, 1, -10, 0, 0, 100], -100],
+                                  expected, test_results, format_string)
+    actual = practice_problem2a([1, 1, -10, 0, 0, 100], -100)
+    print_actual_result_of_test(expected, actual, test_results)
+
     print_summary_of_test_results(test_results)
 
 
@@ -102,27 +109,27 @@ def practice_problem2a(sequence, delta):
       :type delta:    int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
-    #     WRITE THE TESTS FIRST (above).
+    # TODO: 2. Implement and test this function.
+    #     The testing code is already written for you (above).
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-    #    DIFFICULTY:      4
+    #    DIFFICULTY:      3
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
 
 
 def run_test_practice_problem2b():
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # TODO: 3. Implement this TEST function.
     #   It TESTS the  practice_problem2b  function defined below.
-    #   Include at least **   3    ** tests that, taken together,
+    #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
     #   for testing the   practice_problem2b   function defined below.
-    #   (We supplied 2 tests, so you need supply only one more.)
+    #   (We supplied 3 tests, so you need supply only one more.)
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
-    #    TIME ESTIMATE:   5 minutes.
+    #    TIME ESTIMATE:   10 minutes.
     #  --------------------------------------------------------------------
     """ Tests the   practice_problem2b  function. """
     print()
@@ -179,6 +186,35 @@ def run_test_practice_problem2b():
     print('  Argument 1 is:', arg1)
 
     answer = practice_problem2b(arg1, 0)
+
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
+
+    if (arg1 == correct_arg1_after) and (answer == expected):
+        testing_helper.print_colored("  PASSED the above test -- good!",
+                                     color='blue')
+        test_results[0] = test_results[0] + 1
+    else:
+        testing_helper.print_colored("  *** FAILED the above test. ***",
+                                     color='red')
+        test_results[1] = test_results[1] + 1
+
+    # Test 3:
+    arg1 = [795, -795, 0]
+    correct_arg1_after = [-1, -1591, -796]
+    expected = None
+
+    testing_helper.print_function_call_of_test([arg1, -796], test_results,
+                                               format_string)
+    print()
+    print('BEFORE the function call:')
+    print('  Argument 1 is:', arg1)
+
+    answer = practice_problem2b(arg1, -796)
 
     print('AFTER the function call:')
     print('  Argument 1 is:       ', arg1)
