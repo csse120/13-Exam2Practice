@@ -175,7 +175,7 @@ class Triangle(object):
         What goes out: Returns the area of this Triangle.
         Side effects: None.
 
-        HINT #1: Recall Heron's formula for the area of a triangle:
+        HINT: Recall Heron's formula for the area of a triangle:
         Area =   square root of (S
                                  * (S - length of side 1)
                                  * (S - length of side 2)
