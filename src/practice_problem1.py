@@ -108,7 +108,7 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    #  run_test_init()
+    # run_test_init()
     # run_test_area()
     # run_test_bigger_triangle()
     # run_test_shrink_or_expand()
@@ -159,7 +159,7 @@ class Triangle(object):
           :type c: Point
         """
         # ---------------------------------------------------------------------
-        # TODO: 2.
+        # TODO: 3.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -199,8 +199,11 @@ class Triangle(object):
           :rtype: float
         """
         # ---------------------------------------------------------------------
-        # TODO: 3.
+        # TODO: 4.
         #   a. READ the above specification, including the Example AND HINT!
+        #   __
+        #      ************* READ THE HINT!!!!!!!!! *************
+        #   __
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
         #   b. Implement and test this method.
@@ -222,7 +225,7 @@ class Triangle(object):
           :rtype: bool
         """
         # ---------------------------------------------------------------------
-        # TODO 4:
+        # TODO: 5.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -245,7 +248,7 @@ class Triangle(object):
            :type: f: float
         """
         # ---------------------------------------------------------------------
-        # TODO 8:
+        # TODO: 6.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -268,7 +271,7 @@ class Triangle(object):
           :rtype: Triangle:
         """
         # -------------------------------------------------------------------------
-        # TODO: 9
+        # TODO: 7.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
@@ -292,7 +295,7 @@ class Triangle(object):
           :rtype: Float:
         """
         # ---------------------------------------------------------------------
-        # TODO: 9
+        # TODO: 8.
         #   a. READ the above specification, including the Example.
         #        ** ASK QUESTIONS AS NEEDED. **
         #        ** Be sure you understand it, ESPECIALLY the Example.
