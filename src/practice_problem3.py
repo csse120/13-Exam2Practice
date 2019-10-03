@@ -912,7 +912,7 @@ def run_test_practice_problem3g():
 
     # Test 8:
     expected = -99999999999999
-    sequence = (-99999999999999)
+    sequence = (-99999999999999,)
     print_expected_result_of_test([sequence], expected, test_results,
                                   format_string)
     actual = practice_problem3g(sequence)
