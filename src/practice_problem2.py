@@ -141,11 +141,6 @@ def run_test_practice_problem2b():
     format_string = '    practice_problem2b( {}, {} )'
     test_results = [0, 0]  # Number of tests passed, failed.
 
-    print()
-    print('--------------------------------------------------')
-    print('Testing the   practice_problem2b   function:')
-    print('--------------------------------------------------')
-
     # Test 1:
     arg1 =  [2, 10, 5, -20, 8]
     correct_arg1_after = [8, 16, 11, -14, 14]
@@ -234,7 +229,7 @@ def run_test_practice_problem2b():
         test_results[1] = test_results[1] + 1
 
     # -------------------------------------------------------------------------
-    # TODO: 2 (continued): Add your ADDITIONAL test(s) below here.
+    # TODO: 3 (continued): Add your ADDITIONAL test(s) below here.
     #   You do NOT have to use the "fancy" parts of the above example tests,
     #   but you MUST test BOTH the returned value AND the mutated list.
     # -------------------------------------------------------------------------
@@ -262,7 +257,7 @@ def practice_problem2b(sequence, delta):
       :type delta:    int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #     WRITE THE TESTS FIRST (above).
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -370,7 +365,7 @@ def practice_problem2c(sequence):
       :type sequence: [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # TODO: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #  ------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -558,7 +553,7 @@ def practice_problem2d(list1, list2):
         :type list2: [int]]
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # TODO: 6. Implement and test this function.
     #     The testing code is already written for you (above).
     #  -------------------------------------------------------------------------
     #  DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
