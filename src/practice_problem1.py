@@ -181,7 +181,7 @@ class Triangle(object):
                                  * (S - length of side 2)
                                  * (S - length of side 3))
 
-            where S = (1/2) * (perimeter of the triangle)
+            where S = (1/2) * (length of perimeter of the triangle)
 
         For example:  if the triangle has endpoints:
             a = Point(15, 35)
@@ -292,7 +292,7 @@ class Triangle(object):
         Side effects: None.
 
         Type hints:
-          :rtype: Float:
+          :rtype: float:
         """
         # ---------------------------------------------------------------------
         # TODO: 8.
@@ -352,7 +352,7 @@ def run_test_init():
 
 
 def run_test_area():
-    """ Tests the    area    method of the Triangle class """
+    """ Tests the    area    method of the Triangle class. """
 
     print()
     print('-----------------------------------------------------------')
@@ -366,6 +366,7 @@ def run_test_area():
     print()
     print('Expected for area:', 150.0)
     print('Actual:           ', t1.area())
+    print_result_of_test(150.0, t1.area())
 
     p4 = Point(25, 40)
     p5 = Point(15, 50)
@@ -374,6 +375,7 @@ def run_test_area():
     print()
     print('Expected for area:', 75.0)
     print('Actual:           ', t2.area())
+    print_result_of_test(75.0, t2.area())
 
     p7 = Point(15, 20)
     p8 = Point(25, 10)
@@ -382,11 +384,11 @@ def run_test_area():
     print()
     print('Expected for area:', 100.0)
     print('Actual:           ', t3.area())
+    print_result_of_test(100.0, t3.area())
 
 
 def run_test_bigger_triangle():
-    '''Tests the bigger_triangle method of the Triangle class
-    '''
+    """ Tests the   bigger_triangle   method of the Triangle class. """
     print()
     print('-----------------------------------------------------------')
     print('Testing the   bigger_triangle   method of the Triangle class.')
@@ -402,14 +404,17 @@ def run_test_bigger_triangle():
     print()
     print('Expected for bigger_triangle:', True)
     print('                      Actual:', t2.bigger_triangle(t1))
+    print_result_of_test(True, t2.bigger_triangle(t1))
 
     print()
     print('Expected for bigger_triangle:', False)
     print('                      Actual:', t1.bigger_triangle(t2))
+    print_result_of_test(False, t1.bigger_triangle(t2))
 
     print()
     print('Expected for bigger_triangle:', False)
     print('                      Actual:', t1.bigger_triangle(t1))
+    print_result_of_test(False, t1.bigger_triangle(t1))
 
     p5 = Point(15, 20)
     p6 = Point(25, 10)
@@ -423,23 +428,26 @@ def run_test_bigger_triangle():
     print()
     print('Expected for bigger_triangle:', False)
     print('                      Actual:', t4.bigger_triangle(t3))
+    print_result_of_test(False, t4.bigger_triangle(t3))
 
     print()
     print('Expected for bigger_triangle:', True)
     print('                      Actual:', t3.bigger_triangle(t4))
+    print_result_of_test(True, t3.bigger_triangle(t4))
 
     print()
     print('Expected for bigger_triangle:', True)
     print('                      Actual:', t1.bigger_triangle(t3))
+    print_result_of_test(True, t1.bigger_triangle(t3))
 
     print()
     print('Expected for bigger_triangle:', True)
     print('                      Actual:', t1.bigger_triangle(t4))
+    print_result_of_test(True, t1.bigger_triangle(t4))
 
 
 def run_test_shrink_or_expand():
-    '''Tests the    shrink_or_expand   method of the Triangle class
-    '''
+    """ Tests the    shrink_or_expand   method of the Triangle class. """
     print()
     print('-----------------------------------------------------------')
     print('Testing the   shrink_or_expand   method of the Triangle class.')
@@ -471,17 +479,11 @@ def run_test_shrink_or_expand():
 
 
 def run_test_return_doubled_triangle():
-    """ Tests the   return_doubled_triangle    method of the Triangle class """
-
+    """ Tests the  return_doubled_triangle   method of the Triangle class. """
     print()
     print('-----------------------------------------------------------')
-    print(
-        'Testing the   return_doubled_triangle   method of the Triangle class.')
+    print('Testing the  return_doubled_triangle  method of the Triangle class')
     print('-----------------------------------------------------------')
-
-    print()
-    print("You must write your OWN test for this method.")
-    print("You will NOT be graded on the quality of your test(s).")
 
     p1 = Point(30, 75)
     p2 = Point(15, 45)
@@ -489,15 +491,20 @@ def run_test_return_doubled_triangle():
     t1 = Triangle(p1, p2, p3)
     t2 = t1.return_doubled_triangle()
 
+    print()
+    print("Testing whether the correct Triangle was returned:")
     expected_a = Point(60, 150)
     expected_b = Point(30, 90)
     expected_c = Point(60, 180)
     run_test_instance_variables(t2, expected_a, expected_b, expected_c)
 
+    print()
+    print("Testing that the Triangle itself was not mutated:")
+    run_test_instance_variables(t1, p1, p2, p3)
+
 
 def run_test_get_largest_area():
-    '''Tests the get_largest_area method of the Triangle class
-    '''
+    """ Tests the  get_largest_area   method of the Triangle class. """
     print()
     print('-----------------------------------------------------------')
     print('Testing the   get_largest_area   method of the Triangle class.')
@@ -511,6 +518,7 @@ def run_test_get_largest_area():
     print()
     print('Expected for get_largest_area:', area1)
     print('                       Actual:', t1.get_largest_area())
+    print_result_of_test(area1, t1.get_largest_area())
 
     t1.shrink_or_expand(6)
     area2 = t1.area()
@@ -518,6 +526,7 @@ def run_test_get_largest_area():
     print()
     print('Expected for get_largest_area:', area2)
     print('                       Actual:', t1.get_largest_area())
+    print_result_of_test(area2, t1.get_largest_area())
 
     t1.shrink_or_expand(0.1)
     area3 = t1.area()
@@ -525,6 +534,23 @@ def run_test_get_largest_area():
     print()
     print('Expected for get_largest_area:', area2)
     print('                       Actual:', t1.get_largest_area())
+    print_result_of_test(area2, t1.get_largest_area())
+
+    p1 = Point(5, 5)
+    p2 = Point(12, 8)
+    p3 = Point(5, 9)
+    t2 = Triangle(p1, p2, p3)
+    area4 = t2.area()
+
+    print()
+    print('Expected for get_largest_area:', area4)
+    print('                       Actual:', t2.get_largest_area())
+    print_result_of_test(area4, t2.get_largest_area())
+
+    print()
+    print('Expected for get_largest_area:', area2)
+    print('                       Actual:', t1.get_largest_area())
+    print_result_of_test(area2, t1.get_largest_area())
 
 
 ###############################################################################
